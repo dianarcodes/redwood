@@ -19,7 +19,7 @@ class TripHistory extends Component {
     // Source for CO2 factor: https://www.nimblefins.co.uk/average-co2-emissions-car-uk
     return (
       <div>
-        <p> See the trip hisotry: </p>
+        <p> See the trip history: </p>
 
         <table>
           <thead>
