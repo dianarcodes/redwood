@@ -44,6 +44,7 @@ class AddTrip extends Component {
             {/* This input is for a positivie number as distance travelled. */}
             <input
               type="number"
+              min = "0"
               placeholder="Distance in km"
               value={distDisplayProp}
               onChange={distUpdateFun}

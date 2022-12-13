@@ -45,7 +45,8 @@ class App extends Component {
     }
 
     //enteredName must include '-'.
-    else if (!/[a-z]-[a-z]/.test(this.state.enteredName)) {
+    //a-zA-z will allow for characters both lowercase & uppercase
+    else if (!/[a-zA-Z]-[a-zA-Z]/.test(this.state.enteredName)) {
       this.setState({
         error:
           'Trip must include origin and destination as well as the character "-".',
@@ -53,6 +54,7 @@ class App extends Component {
       console.log(this.state.error);
       //alert(this.state.error);
     }
+
     //Else call enterFun & add it to the list
     else {
       this.setState({ error: null });
